@@ -16,10 +16,10 @@ const Page = () => {
             className="hidden md:block"
           />
         </div>
-        <h1 className="text-2xl md:text-5xl font-bold text-center">
+        <h1 className="text-2xl md:text-5xl font-bold text-center text-white">
           Build something with VERED AI
         </h1>
-        <p className="text-lg md:text-xl text-muted-foreground text-center">
+        <p className="text-lg md:text-xl text-center text-white">
           Create apps and websites by chatting with AI
         </p>
         <div className="max-w-3xl mx-auto w-full">

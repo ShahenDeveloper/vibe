@@ -20,7 +20,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "VEREDAI",
-  description: "VEREDAI – Elevate your chat experience with smart, seamless conversations.",
+  description:
+    "VEREDAI – Elevate your chat experience with smart, seamless conversations.",
 };
 
 export default function RootLayout({
@@ -43,8 +44,8 @@ export default function RootLayout({
           >
             <ThemeProvider
               attribute="class"
-              defaultTheme="system"
-              enableSystem
+              defaultTheme="dark"
+              enableSystem={false}
               disableTransitionOnChange
             >
               <Toaster />
@@ -55,4 +56,4 @@ export default function RootLayout({
       </TRPCReactProvider>
     </ClerkProvider>
   );
-};
+}

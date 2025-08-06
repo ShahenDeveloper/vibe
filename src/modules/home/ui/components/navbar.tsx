@@ -15,14 +15,16 @@ export const Navbar = () => {
   return (
     <nav
       className={cn(
-        "p-4 bg-transparent fixed top-0 left-0 right-0 z-50 transition-all duration-200 border-b border-transparent",
-        isScrolled && "bg-background border-border"
+        "p-4 fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+        isScrolled
+          ? "bg-gray-800/30 backdrop-blur-sm border-b border-border"
+          : "bg-transparent backdrop-blur-none border-b border-transparent"
       )}
     >
       <div className="max-w-5xl mx-auto w-full flex justify-between items-center">
         <Link href="/" className="flex items-center gap-2">
           <Image src="/logo.svg" alt="VEREDAI" width={24} height={24} />
-          <span className="font-semibold text-lg">VERED-AI</span>
+          <span className="font-semibold text-lg text-white">VERED-AI</span>
         </Link>
         <SignedOut>
           <div className="flex gap-2">
@@ -32,15 +34,15 @@ export const Navbar = () => {
               </Button>
             </SignUpButton>
             <SignInButton>
-              <Button size="sm">
-                Sign in
-              </Button>
+              <Button size="sm">Sign in</Button>
             </SignInButton>
           </div>
         </SignedOut>
-        <SignedIn>
-          <UserControl showName />
-        </SignedIn>
+        <div className="text-white">
+          <SignedIn>
+            <UserControl showName />
+          </SignedIn>
+        </div>
       </div>
     </nav>
   );
