@@ -27,7 +27,7 @@ export const Navbar = () => {
           <span className="font-semibold text-lg text-white">VERED-AI</span>
         </Link>
         <SignedOut>
-          <div className="flex gap-2">
+          <div className="flex gap-2 text-white">
             <SignUpButton>
               <Button variant="outline" size="sm">
                 Sign up
@@ -38,11 +38,9 @@ export const Navbar = () => {
             </SignInButton>
           </div>
         </SignedOut>
-        <div className="text-white">
           <SignedIn>
             <UserControl showName />
           </SignedIn>
-        </div>
       </div>
     </nav>
   );
