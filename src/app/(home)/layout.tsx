@@ -2,6 +2,7 @@ import { Navbar } from "@/modules/home/ui/components/navbar";
 import type { ReactNode } from "react";
 
 import { Montserrat } from "next/font/google";
+import Footer from "@/modules/home/ui/components/footer";
 
 const montserrat = Montserrat({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"], // Choose weights as needed
@@ -83,9 +84,10 @@ const Layout = ({ children }: Props) => {
       </div>
 
       {/* Page content */}
-      <div className="flex-1 flex flex-col px-4 pb-4 z-10 relative">
+      <div className="flex-1 flex flex-col z-10 relative">
         {children}
       </div>
+      <Footer/>
     </main>
   );
 };

@@ -18,7 +18,7 @@ export const Navbar = () => {
         "p-4 fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         isScrolled
           ? "bg-gray-800/30 backdrop-blur-sm border-b border-border"
-          : "bg-transparent backdrop-blur-none border-b border-transparent"
+          : "bg-transparent backdrop-blur-none border-b "
       )}
     >
       <div className="max-w-5xl mx-auto w-full flex justify-between items-center">
