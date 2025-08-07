@@ -18,7 +18,7 @@ export const ProjectsList = () => {
 
   return (
     <div className="w-full bg-white dark:bg-sidebar rounded-xl p-8 border flex flex-col gap-y-6 sm:gap-y-4">
-      <h2 className="text-2xl font-semibold">
+      <h2 className="sm:text-2xl text-xl font-semibold text-white">
         {user?.firstName}&apos;s VERED AI
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
@@ -46,10 +46,10 @@ export const ProjectsList = () => {
                   className="object-contain"
                 />
                 <div className="flex flex-col">
-                  <h3 className="truncate font-medium">
+                  <h3 className="truncate sm:text-sm text-xs text-white font-medium">
                     {project.name}
                   </h3>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="sm:text-sm text-xs  text-white">
                     {formatDistanceToNow(project.updatedAt, {
                       addSuffix: true,
                     })}

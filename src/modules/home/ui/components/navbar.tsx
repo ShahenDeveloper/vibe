@@ -24,17 +24,17 @@ export const Navbar = () => {
       <div className="max-w-5xl mx-auto w-full flex justify-between items-center">
         <Link href="/" className="flex items-center gap-2">
           <Image src="/logo.svg" alt="VEREDAI" width={24} height={24} />
-          <span className="font-semibold text-lg text-white">VERED-AI</span>
+          <span className="font-semibold text-sm sm:text-lg text-white">VERED-AI</span>
         </Link>
         <SignedOut>
-          <div className="flex gap-2 text-white">
+          <div className="flex gap-2 text-white ">
             <SignUpButton>
-              <Button variant="outline" size="sm">
+              <Button variant="outline" className="sm:text-[14px] text-[12px]" size="sm">
                 Sign up
               </Button>
             </SignUpButton>
             <SignInButton>
-              <Button size="sm">Sign in</Button>
+              <Button size="sm" className="sm:text-[14px] text-[12px]">Sign in</Button>
             </SignInButton>
           </div>
         </SignedOut>

@@ -34,7 +34,7 @@ export const Usage = ({ points, msBeforeNext }: Props) => {
     <div className="rounded-t-xl bg-background border border-b-0 p-2.5">
       <div className="flex items-center gap-x-2">
         <div>
-          <p className="text-sm">
+          <p className="sm:text-sm text-xs">
             {points} {hasProAccess ? "": "free"} credits remaining
           </p>
           <p className="text-xs text-muted-foreground">
@@ -47,8 +47,9 @@ export const Usage = ({ points, msBeforeNext }: Props) => {
             size="sm"
             variant="tertiary"
             className="ml-auto"
+            
           >
-            <Link href="/pricing">
+            <Link href="/pricing" className="text-xs sm:text-sm">
               <CrownIcon /> Upgrade
             </Link>
           </Button>
