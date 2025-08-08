@@ -1,13 +1,8 @@
+// modules/home/ui/layout.tsx (or similar)
+
 import { Navbar } from "@/modules/home/ui/components/navbar";
-import type { ReactNode } from "react";
-
-import { Montserrat } from "next/font/google";
 import Footer from "@/modules/home/ui/components/footer";
-
-const montserrat = Montserrat({
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"], // Choose weights as needed
-  subsets: ["latin"],
-});
+import type { ReactNode } from "react";
 
 interface Props {
   children: ReactNode;
@@ -15,14 +10,11 @@ interface Props {
 
 const Layout = ({ children }: Props) => {
   return (
-    <main className={`${montserrat.className} relative flex flex-col min-h-screen`}>
+    <main className="relative flex flex-col min-h-screen font-sans">
       <Navbar />
-      
-      {/* Enhanced Blobs layer with smooth concentric blending */}
+      {/* Background blobs */}
       <div className="absolute inset-0 -z-[1] overflow-hidden">
-          <div className="absolute inset-0 bg-noise pointer-events-none opacity-[0.15] mix-blend-soft-light" />
-
-        {/* Dark Gray - Largest/Outermost */}
+        <div className="absolute inset-0 bg-noise pointer-events-none opacity-[0.15] mix-blend-soft-light" />
         <div
           className="blob"
           style={{
@@ -31,13 +23,12 @@ const Layout = ({ children }: Props) => {
             left: "50%",
             top: "50%",
             transform: "translate(-50%, -40%)",
-            background: "radial-gradient(circle at center, rgba(24,27,30,0.8) 0%, transparent 100%)",
+            background:
+              "radial-gradient(circle at center, rgba(24,27,30,0.8) 0%, transparent 100%)",
             filter: "blur(140px)",
             opacity: 1,
           }}
         />
-        
-        {/* Blue */}
         <div
           className="blob"
           style={{
@@ -46,13 +37,11 @@ const Layout = ({ children }: Props) => {
             left: "50%",
             top: "50%",
             transform: "translate(-50%, -40%)",
-            background: "radial-gradient(circle at center, rgba(62,89,150,0.7) 0%, transparent 70%)",
-            // filter: "blur(100px)",
+            background:
+              "radial-gradient(circle at center, rgba(62,89,150,0.7) 0%, transparent 70%)",
             opacity: 1,
           }}
         />
-        
-        {/* Pinkish */}
         <div
           className="blob"
           style={{
@@ -61,13 +50,11 @@ const Layout = ({ children }: Props) => {
             left: "50%",
             top: "50%",
             transform: "translate(-50%, -40%)",
-            background: "radial-gradient(circle at center, rgba(204,147,195,0.6) 0%, transparent 70%)",
-            // filter: "blur(70px)",
+            background:
+              "radial-gradient(circle at center, rgba(204,147,195,0.6) 0%, transparent 70%)",
             opacity: 1,
           }}
         />
-        
-        {/* Orange - Smallest/Innermost */}
         <div
           className="blob"
           style={{
@@ -76,18 +63,15 @@ const Layout = ({ children }: Props) => {
             left: "50%",
             top: "50%",
             transform: "translate(-50%, -40%)",
-            background: "radial-gradient(circle at center, RGB(241, 100, 4) 0%, transparent 60%)",
-            // filter: "blur(40px)",
+            background:
+              "radial-gradient(circle at center, rgb(241, 100, 4) 0%, transparent 60%)",
             opacity: 1,
           }}
         />
       </div>
-
       {/* Page content */}
-      <div className="flex-1 flex flex-col z-10 relative">
-        {children}
-      </div>
-      <Footer/>
+      <div className="flex-1 flex flex-col ">{children}</div>
+       <Footer />
     </main>
   );
 };

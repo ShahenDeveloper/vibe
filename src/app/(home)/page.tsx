@@ -5,7 +5,7 @@ import { ProjectsList } from "@/modules/home/ui/components/projects-list";
 
 const Page = () => {
   return (
-    <div className="flex flex-col max-w-5xl mx-auto w-full">
+    <div className="flex flex-col max-w-5xl mx-auto w-full mb-20">
       <section className="space-y-6 py-[16vh] 2xl:py-48">
         <div className="flex flex-col items-center">
           <Image

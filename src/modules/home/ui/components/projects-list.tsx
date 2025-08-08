@@ -13,6 +13,7 @@ export const ProjectsList = () => {
   const trpc = useTRPC();
   const { user } = useUser();
   const { data: projects } = useQuery(trpc.projects.getMany.queryOptions());
+  console.log(user)
 
   if (!user) return null;
 
