@@ -225,10 +225,11 @@
     /* mix-blend-mode: screen; Ensure screen mode is default */
   }
 }
-/* globals.css */
+/* globals.css 
 .bg-noise {
   background-image: url('/noise.jpg');
   background-size: 200px 200px;
   background-repeat: repeat;
 }
 
+*/
