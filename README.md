@@ -112,3 +112,5 @@ npm run lint           # Run ESLint
 ---
 
 Created by [CodeWithAntonio](https://codewithantonio.com)
+
+## DEPLOY IN HOSTINGER
