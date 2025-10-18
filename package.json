@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --port 3123 --turbopack",
-    "build": "next build",
+    "build": "prisma generate && next build",
     "start": "next start --port 3123",
     "lint": "next lint",
     "postinstall": "prisma generate"
