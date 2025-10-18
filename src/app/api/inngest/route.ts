@@ -9,4 +9,5 @@ export const { GET, POST, PUT } = serve({
   functions: [
     codeAgentFunction,
   ],
+  signingKey:"signkey-prod-6526a24c610883c9df06b0141547517a9804a2f6250b38f8399a6625d65533e9"
 });
