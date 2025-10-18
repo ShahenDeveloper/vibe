@@ -9,5 +9,5 @@ export const { GET, POST, PUT } = serve({
   functions: [
     codeAgentFunction,
   ],
-  signingKey:"signkey-prod-d4fe7d1d9b506d9e48933f0fbee49e1db707a738deac7f23f3b61e7737b1a6dc"
+  signingKey:"signkey-prod-9fad2be2ae44ef70cc879af2b17a46324c901f609cac7c83a703c548c1bb310d"
 });
