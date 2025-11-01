@@ -17,7 +17,7 @@ const Page = () => {
           />
         </div>
         <h1 className="sm:text-2xl text-xl md:text-5xl font-bold text-center text-white">
-          Build something with VERED AI
+          Build something with VERED
         </h1>
         <p className="sm:text-lg text-base md:text-xl text-center text-white">
           Create apps and websites by chatting with 
