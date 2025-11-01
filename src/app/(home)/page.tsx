@@ -20,7 +20,7 @@ const Page = () => {
           Build something with VERED AI
         </h1>
         <p className="sm:text-lg text-base md:text-xl text-center text-white">
-          Create apps and websites by chatting with AI
+          Create apps and websites by chatting with 
         </p>
         <div className="max-w-3xl mx-auto w-full">
           <ProjectForm />
